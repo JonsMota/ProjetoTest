@@ -1,13 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: [
-      'source.unsplash.com',
-      'images.unsplash.com',
-      'lh3.googleusercontent.com',
-    ]
-  }
-}
+import withBundleAnalyzer from '@next/bundle-analyzer'
 
-module.exports = nextConfig
+export default withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true'
+})({
+  reactStrictMode: true,
+  experimental: {
+    reactRoot: true
+  },
+  compiler: {
+    styledComponents: true
+  },
+  images: {
+    domains: ['images.unsplash.com'],
+  },
+})
