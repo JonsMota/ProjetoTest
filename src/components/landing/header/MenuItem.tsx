@@ -20,6 +20,7 @@ const StyledMenuItem = styled.div`
     padding: 1rem;
     border-radius: 0.375rem;
     height: 2.25rem; 
+    background-color: #4f46e5;
 `
 
 export default function MenuItem(props: MenuItemProps) {

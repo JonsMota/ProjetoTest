@@ -6,6 +6,7 @@ import MenuItem from './MenuItem'
 const MenuContainer = styled.div`
     display: flex;
     gap: 0.5rem;
+    background-color: yellow;
 `
 
 const StyledMenuItem = styled(MenuItem)`
@@ -33,17 +34,14 @@ export default function Menu() {
                 Início
             </StyledMenuItem>
             <StyledMenuItem url="#benefits">
-                Vantagens
+                Sobre Nós
             </StyledMenuItem>
             <StyledMenuItem url="#testimonials">
-                Depoimentos
+                Áreas de Atuação
             </StyledMenuItem>
-            <StyledLogin>
-                <StyledLoginContent>
-                    <IconBrandGoogle size={15} />
-                    <span>Login</span>
-                </StyledLoginContent>
-            </StyledLogin>
+            <StyledMenuItem url="#testimonials">
+                Entre em Contato
+            </StyledMenuItem>
         </MenuContainer>
     )
 }

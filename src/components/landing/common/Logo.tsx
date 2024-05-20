@@ -5,27 +5,24 @@ interface AreaProps {
     id?: string
 }
 
-const Bit = styled.span`
-    font-weight: 900;
-    color: white;
-`;
-
-const Cent = styled.span`
-    color: rgb(161 161 170 ); 
-    font-weight: 100;
-
-`;
-
 const StyledLogo = styled.div`
     font-size: 1.875rem; 
     line-height: 2.25rem
-`;
+`
+const Logos = styled.div`
+  img {
+    width: 200px;
+    height: 130px;
+    border-radius: 8px;
+  }
+`
 
 export default function Logo() {
     return (
         <StyledLogo>
-            <Bit>Bit</Bit>
-            <Cent>CENT</Cent>
+            <Logos>
+              <img src="/logo.jpg" alt="Logo" />
+            </Logos>
         </StyledLogo>
     )
 }

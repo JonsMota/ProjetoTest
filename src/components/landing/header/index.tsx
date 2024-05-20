@@ -5,7 +5,7 @@ import Logo from "../common/Logo"
 import Menu from "./Menu"
 
 const HeaderContainer = styled(Area)`
-    background-color: black;
+    background-color: #851b1b;
     position: fixed;
     z-index: 50;
 `
@@ -13,7 +13,7 @@ const HeaderContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5rem;
+    height: 6rem;
 `
 
 export default function Header() {
