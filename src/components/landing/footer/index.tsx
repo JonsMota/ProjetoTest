@@ -1,21 +1,24 @@
 import styled from "styled-components"
-
 import Area from "../common/Area"
 import Logo from "../common/Logo"
 import SocialMedias from "./SocialMedias"
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const StyledArea = styled(Area)`
     background-color: black;
     padding-top: 5rem;
     padding-bottom: 5rem;
 `;
+
 const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
    
     @media (min-width: 768px) {
-        align-items: flex-start;
+        flex-direction: row; // Altere a direção para row
+        justify-content: space-between; // Adicione espaço entre os itens
     }
 `;
 
@@ -40,6 +43,7 @@ const SimplifyText = styled.span`
     background-image: linear-gradient(to right, #4f46e5, #0891b2);
     -webkit-background-clip: text; 
 `;                                                                    
+
 
 const FooterIcon = styled.div`
     display: flex;
@@ -71,16 +75,46 @@ const Span = styled.span`
     color: rgb(239 68 68);
     font-weight: 700;
 `
+const ContactSection = styled.div`
+    /* Estilos para a seção de contato */
+`;
+
+const WhatsAppLink = styled.a`
+    /* Estilos para o link do WhatsApp */
+`;
+
+const MapSection = styled.div`
+    /* Estilos para a seção do mapa */
+`;
+
 
 export default function Footer() {
     return (
         <StyledArea>
             <FooterContainer>
-                <Logo />
-                <FooterText>
-                    <div>Plataforma financeira</div>
-                    <HighlightText>que <SimplifyText>simplifica</SimplifyText> sua vida</HighlightText>
-                </FooterText>
+                <div>
+                    <Logo />
+                    <FooterText>
+                        <div>Escritório jurídico que</div>
+                        <HighlightText><SimplifyText>descomplica</SimplifyText>seus direitos trabalhistas!</HighlightText>
+                    </FooterText>
+                </div>
+                <ContactSection>
+                    <h3>Entre em Contato</h3>
+                    <WhatsAppLink href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                    <FaWhatsapp size={24} color="green" /> Fale Conosco
+                    </WhatsAppLink>
+                </ContactSection>
+                <div>
+                    <h2 style={{color : 'yellow'}}>Localização</h2>
+                    <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
+                        <GoogleMap
+                            mapContainerStyle={{ width: '400px', height: '400px' }}
+                            center={{ lat: -3.745, lng: -38.523 }}
+                            zoom={10}
+                        />
+                    </LoadScript>
+                </div>
             </FooterContainer>
             <FooterIcon>
                 <SocialMedias />

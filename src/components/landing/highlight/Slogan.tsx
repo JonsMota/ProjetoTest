@@ -187,15 +187,15 @@ export default function Slogan() {
                 </StyledUm>
                 <StyledUm>
                     <span>de</span>
-                    <span>organizar</span>
+                    <span>gerenciar</span>
                 </StyledUm>
                 
                 <StyledUm>
-                    <span>seu</span>
+                    <span>seus</span>
                     <StyledX>
                         <Money />
                         <MoneyAfter>
-                             dinheiro
+                            direitos
                         </MoneyAfter>
                     </StyledX>
                 </StyledUm>
@@ -208,7 +208,7 @@ export default function Slogan() {
             {renderPhrase()}
             <StyledSubtitle>
             
-            Plataforma financeira que simplifica sua vida!
+            Escritório jurídico que descomplica seus direitos trabalhistas!
             
             </StyledSubtitle>
             <StyledContainerButton>

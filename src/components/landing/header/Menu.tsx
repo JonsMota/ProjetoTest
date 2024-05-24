@@ -6,7 +6,6 @@ import MenuItem from './MenuItem'
 const MenuContainer = styled.div`
     display: flex;
     gap: 0.5rem;
-    background-color: yellow;
 `
 
 const StyledMenuItem = styled(MenuItem)`

@@ -11,7 +11,6 @@ export default function SocialMedias() {
         <SocialMediaContainer>
             <SocialMedia icon={<IconBrandYoutube />} url="/index2" />
             <SocialMedia icon={<IconBrandInstagram />} url="/index3" />
-            <SocialMedia icon={<IconBrandGithub />} url="https://github.com" />
             <SocialMedia icon={<IconBrandLinkedin />} url="https://www.linkedin.com" />
         </SocialMediaContainer>
     )

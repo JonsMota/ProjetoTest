@@ -35,19 +35,19 @@ export default function Benefits() {
             <StyledBenefit>
                 <Benefit
                     image={vantagem1}
-                    title="Gerenciador financeiro completo e simples de usar"
-                    subtitle="Aqui você consegue ter controle completo das suas finanças e uma visualização fácil de entender. O caminho da economia começa aqui!"
+                    title="Assessoria jurídica trabalhista completa e de fácil utilização"
+                    subtitle="Aqui você obtém controle total dos seus direitos trabalhistas com uma assessoria clara e compreensível. O caminho para a segurança jurídica inicia-se aqui!”"
                 />
                 <Benefit
                     image={vantagem2}
-                    title="Organizado para você nunca mais esquecer uma conta"
-                    subtitle="Visualize e acompanhe as suas finanças dia a dia. A organização mensal vai te ajudar a ter um controle claro das receitas e despesas!"
+                    title="Estruturado para que nenhum direito seu seja esquecido"
+                    subtitle="Monitore e gerencie seus processos trabalhistas diariamente. A organização mensal proporciona um controle transparente do andamento do seu caso!"
                     reverse
                 />
                 <Benefit
                     image={vantagem3}
-                    title="Ideal para planejamento financeiro"
-                    subtitle="Nosso princípio número 1 é ser uma plataforma que torne o controle financeiro simples, então o planejamento se torna algo natural!"
+                    title="“Ideal para o planejamento da sua carreira e proteção dos seus direitos trabalhistas."
+                    subtitle="Nossa premissa número 1 é oferecer um serviço jurídico que simplifica o entendimento dos seus direitos, tornando o planejamento trabalhista parte integrante da sua vida profissional"
                 />
             </StyledBenefit>
         </BenefitsContainer>

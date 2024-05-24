@@ -5,7 +5,7 @@ import Logo from "../common/Logo"
 import Menu from "./Menu"
 
 const HeaderContainer = styled(Area)`
-    background-color: #851b1b;
+    background-color: black;
     position: fixed;
     z-index: 50;
 `

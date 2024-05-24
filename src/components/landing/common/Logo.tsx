@@ -12,7 +12,7 @@ const StyledLogo = styled.div`
 const Logos = styled.div`
   img {
     width: 200px;
-    height: 130px;
+    height: 100px;
     border-radius: 8px;
   }
 `
